@@ -13,10 +13,10 @@ services:
       DB_MYSQL_USER: "${DB_MYSQL_USER}"
       DB_MYSQL_PASSWORD: "${DB_MYSQL_PASSWORD}"
       DB_MYSQL_NAME: "${DB_MYSQL_NAME}"
+      TZ: "${TZ}"
     volumes:
       - ${VOL_NGINX_DATA}
       - ${VOL_NGINX_LETSENCRYPT}
-      - ${VOL_TZ}
       - ${VOL_LOCALTIME}
     networks:
       network-share:
